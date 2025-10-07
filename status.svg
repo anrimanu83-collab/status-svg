@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.6" stop-color="#1b1636"/>
+      <stop offset="1" stop-color="#071018"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="35%" r="50%">
+      <stop offset="0" stop-color="#5b3fd6" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- фон -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+
+  <!-- мягкое сияние за текстом -->
+  <ellipse cx="540" cy="580" rx="520" ry="420" fill="url(#glow)" />
+
+  <!-- звёзды -->
+  <g fill="#fff" fill-opacity="0.85">
+    <circle cx="140" cy="120" r="1.6" fill-opacity="0.9"/>
+    <circle cx="220" cy="240" r="1.2" fill-opacity="0.7"/>
+    <circle cx="980" cy="180" r="1.8" fill-opacity="0.95"/>
+    <circle cx="760" cy="90" r="1.3" fill-opacity="0.8"/>
+    <circle cx="430" cy="50" r="1.4" fill-opacity="0.85"/>
+    <circle cx="840" cy="420" r="1.1" fill-opacity="0.7"/>
+    <circle cx="260" cy="600" r="1.0" fill-opacity="0.6"/>
+    <circle cx="920" cy="760" r="1.5" fill-opacity="0.8"/>
+    <circle cx="120" cy="980" r="1.2" fill-opacity="0.6"/>
+    <circle cx="540" cy="120" r="2.2" fill-opacity="1"/>
+    <!-- небольшие рассеянные точки -->
+    <g opacity="0.35">
+      <circle cx="60" cy="540" r="0.9"/>
+      <circle cx="1000" cy="1000" r="0.9"/>
+      <circle cx="840" cy="1400" r="0.9"/>
+      <circle cx="300" cy="1500" r="0.9"/>
+      <circle cx="640" cy="300" r="0.9"/>
+    </g>
+  </g>
+
+  <!-- блок текста -->
+  <g filter="url(#softShadow)">
+    <text x="50%" y="36%" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="46" fill="#ffffff" fill-opacity="0.98" letter-spacing="0.2em" style="font-style:italic;">
+      <tspan x="50%" dy="0">Астральное забвенье не страшит,</tspan>
+      <tspan x="50%" dy="1.6em">Но мир живых необходим, как воздух.</tspan>
+      <tspan x="50%" dy="2.6em">Раскалывая мрак пустой души, искря,</tspan>
+      <tspan x="50%" dy="1.6em">Мечты сквозь время рвутся к звёздам.</tspan>
+
+      <tspan x="50%" dy="3.2em">Мы не увидим свод могильных плит,</tspan>
+      <tspan x="50%" dy="1.6em">Анорексичной грации оградок.</tspan>
+      <tspan x="50%" dy="2.6em">Пугает тот, кто точно победит,</tspan>
+      <tspan x="50%" dy="1.6em">Забрав навечно вкус, что был так сладок.</tspan>
+    </text>
+  </g>
+
+  <!-- подпись (по желанию можно убрать) -->
+  <text x="50%" y="92%" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#bfc8ff" fill-opacity="0.65">
+    <tspan>—</tspan>
+  </text>
+</svg>
